@@ -34,8 +34,35 @@ body {
     padding: 0px;
     border: 0px;
     position: relative;
-    width: 100%;
+    max-width:100%;
+   background-image: url(bk.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    background-color: yellow;
 }
+
+.text-overlay {
+  position: absolute;
+  top: 80%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -10%);
+  z-index: 1; /* Ensure text appears on top of the image */
+  color: #F9A502; /* Adjust text color as needed */
+  font-size: 40px; /* Adjust text size as needed */
+  font-weight: bold; /* Adjust text style as needed */
+  text-align: center; /* Adjust text alignment as needed */
+   text-decoration: underline;
+    background: transparent !important;
+     text-shadow: 
+        -1px -1px 0 white,  
+         1px -1px 0 white,
+        -1px  1px 0 white,
+         1px  1px 0 white; /* Shadow offsets to create a contour effect */
+    
+}
+
+
 
 #background-video {
   position: absolute;
@@ -77,6 +104,7 @@ body {
   flex-wrap: wrap; /* Enable wrapping */
   justify-content: center; /* Center content horizontally */
     text-shadow:0 0 9px black; /* Example shadow color */
+   
 }
 
 .main-container div {
@@ -106,27 +134,29 @@ body {
     }
 }
 
-#baby {
-    background-image: url(baby1.jpg);
+.games{
     background-size: cover;
     background-position: center;
-    max-width: 1280px;
+    max-width: 1080px;
+    border-radius: 20px;
+
+}
+
+#baby {
+    background-image: url(baby1.jpg);
+    
 }
 
 #snake{ 
 background-image: url(snake1.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 1280px;
+    
 }
 
 
 #box{
     
     background-image: url(box2.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 1280px;
+    
 }
 
 .game-download{
