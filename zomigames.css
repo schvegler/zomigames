@@ -44,7 +44,7 @@ body {
     max-width:100%;
    background-image: url(bk.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     margin-bottom: 20px;
     background-color: black;
 }
