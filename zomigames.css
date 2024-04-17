@@ -16,17 +16,24 @@ body {
     background-color: #2a2a2a;
 }
 
-.hidden {
-    display: none;
-}
-
 #menu-list {
-    height: 90px;
+    height: 70px;
     padding: 20px;
     background-color: #121212;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#menu-list div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img{
+    height: 100px;
+    display: flex;
 }
 
 #promo {
@@ -89,13 +96,17 @@ body {
     max-width: 200px;
 }
 
+#menu-list p{
+    font-size: 20px;
+}
+
 .title img{
     margin-top: 10px;
     width: 90px;
 }
 
 #download img {
-    max-width: 50px;
+    max-width: 40px;
    
 }
 
