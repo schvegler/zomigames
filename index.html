@@ -12,18 +12,19 @@
         </div>
     </head>
 
+
+
     <body>
-        <div class="menu-hidden">
+        <div class="menu hidden">
             
             <div id="menu-list">
-                <div>
-                 <div id="logo">
-                    <img src="ZomiGamesLogoNoShadow.png" onload="ImageReady()">
+                <div class="title">
+                    <img src="ZomigamesTitleLogo.png" onload="Ï">
+                    
+                </div>
+                <div id="logo">
+                    <img src="IconFlag.png" onload="ImageReady()">
                  </div>
-                <div>
-                    <p>ZomiGames</p>
-                </div>
-                </div>
                 <div id="download">
                     <img src="DownloadIcon.png" onload="ImageReady()">
                 </div>
@@ -47,6 +48,11 @@
                         <img class = "img" src="baby4.jpg">
                         <img class = "img" src="baby5.jpg">
                     </figure>
+                </div>
+                <div >
+                    <video id = "video" preload="auto" autoplay loop muted="muted" volume ="0" controls>
+                        <source src="" type="video/mp4">
+                    </video>
                 </div>
             </ul>
 
@@ -113,20 +119,24 @@
         </div>
 
         <div class="main-container">
-       
+
             <div id="promo">
-                 <a href="https://brokenkingdomgame.com">
-                <div class="text-overlay">Broken Kingdom</div>
-                </a>
+                <video autoplay muted loop poster="poster.jpg" id="background-video">
+                <source src="demo.webm" type="video/webm" >
+                <source src="demo.mp4" type="video/mp4" >
+                <!-- Add more <source> tags for different video formats -->
+                Your browser does not support the video tag.
+                </video>
+               <div id="welcomeImg">
+                </div>
             </div>
-           
-            <div id="baby" class="baby, games">
+            <div id="baby" class="baby">
                 <p>Feathery Fury</p>
             </div>
-            <div id="snake" class="snake, games">
+            <div id="snake" class="snake">
                 <p>Snakr</p>
             </div>
-            <div id="box" class="box, games">
+            <div id="box" class="box">
                 <p>Box Blaster</p>
             </div>
 

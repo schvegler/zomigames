@@ -9,9 +9,9 @@ var img;
 var pp;
 var video;
 var zomiLogo;
-var photosBaby = new Array();
-var photosSnake = new Array();
-var photosBox = new Array();
+var photosBaby = [];
+var photosSnake = [];
+var photosBox = [];
 var photoGroup = [photosBaby, photosSnake, photosBox];
 var videos = [];
 var titles = ["Feathery Fury", "Classis Snake", "Hit The Box"];
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     anim = document.getElementsByClassName("anim");
     img = document.getElementsByClassName("img");
     closePanel = document.getElementById("close-panel");
-    downloadPanel = document.getElementById("download-panel") 
+    downloadPanel = document.getElementById("download-panel") ;
     detailPanel = document.getElementById("detail-panel");
     document.getElementById("privacy-link").addEventListener("click", OpenPrivacy);
     document.getElementById("download").addEventListener("click", OpenDownload);
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     GetBabyPhotos();
     GetSnakePhotos();
     GetBoxPhotos();
-})
+});
 
 function loadNow(opacity) {
 
@@ -53,7 +53,7 @@ function loadNow(opacity) {
     } else {
         loader.style.opacity = opacity;
         window.setTimeout(function() {
-            loadNow(opacity - 0.05)
+            loadNow(opacity - 0.05);
         }, 10);
     }
 }
