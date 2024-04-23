@@ -1,5 +1,5 @@
 .colorPalette{
-    color: #FFFBDA,#FFEC9E,#FFBB70,#ED9455;
+    color: #FFFBDA,#FFEC9E,#FFBB70,#ED9455 #FAFBED;
 }
 
 #loading{
@@ -16,7 +16,7 @@
 #logo{
     position: absolute;
     z-index: 10;
-    margin-top: 130px;
+    margin-top: 170px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -24,11 +24,12 @@
 body {
     border: 0px;
     margin: auto;
-    background-color: #2a2a2a;
+    background-color: #FFFBDA;
 }
 
+
 #menu-list {
-    height: 50px;
+    height: 70px;
     padding: 20px;
     background-color: #121212;
     display: flex;
@@ -43,7 +44,7 @@ body {
 }
 
 #logo img{
-    height: 120px;
+    height: 150px;
     display: flex;
 }
 
@@ -65,17 +66,13 @@ body {
   left: 50%; /* Adjust as needed */
   transform: translate(-50%, -10%);
   z-index: 1; /* Ensure text appears on top of the image */
-  color: #F9A502; /* Adjust text color as needed */
+  color: #FAFBED; /* Adjust text color as needed */
   font-size: 40px; /* Adjust text size as needed */
   font-weight: bold; /* Adjust text style as needed */
   text-align: center; /* Adjust text alignment as needed */
    text-decoration: underline;
     background: transparent !important;
-     text-shadow: 
-        -1px -1px 0 white,  
-         1px -1px 0 white,
-        -1px  1px 0 white,
-         1px  1px 0 white; /* Shadow offsets to create a contour effect */
+    
     
 }
 
@@ -95,7 +92,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url(WelcomeImg.png);
+    background-image: url(WelcomeImgXLight.png);
      background-size: cover;
     background-position: center;
     background-color: transparent;
@@ -163,6 +160,7 @@ body {
     margin-top: 50px;
     border-radius: 30px;
     max-width: 1024px;
+    border: 10px solid #FFBB70;
 }
 
 #snake{ 
@@ -170,6 +168,8 @@ body {
     border-radius: 30px;
     background-image: url(snake1.jpg);
     max-width: 1024px;
+    border: 10px solid #FFBB70;
+
 }
 
 
@@ -178,7 +178,8 @@ body {
     border-radius: 30px;
     background-image: url(box2.jpg);
     max-width: 1024px;
-    
+    border: 10px solid #FFBB70;
+
 }
 
 .game-download{
@@ -245,6 +246,7 @@ body {
     padding-top: 120px;
     padding-bottom: 150px;
     position: absolute;
+    position: fixed;
     background: rgba(0, 0, 0, 0.8);
     top:0;
     //left:-100%;
@@ -260,6 +262,7 @@ body {
     position: absolute;
     transition: 1s;
     overflow: hidden;
+    position: fixed;
 }
 
 #close-detail {
@@ -303,7 +306,7 @@ body {
     text-align: center;
     width: 80%;
     font-size: 1em;
-    color: #D39B09
+    color: #FFBB70
 }
 
 #text {
@@ -347,22 +350,34 @@ video {
 }
 
 footer {
-    text-align: center;
-    height: 80px; /* Set the height of the footer */
-    background-color: #121212; /* Example background color */
+   display: flex;
+    height: 120px; /* Set the height of the footer */
+    background-color: #121212; /* Example background color */  
+    align-items: center;
 }
 
-footer p {
-     display: inline-block;
+footer img {
+    height: 40px;
+    padding: 40px;
+    padding-right: 0px;
 }
 
 p {
     font-family: sans-serif;
-    color: orange;
+    color: #FFEC9E;
     text-align: center;
     font-size: 2vw;
     margin-right: 5%;
     margin-left: 5%;
+}
+
+footer p {
+    float: right;
+     display: inline-block;
+}
+
+.hidden {
+    
 }
 
 .text1 {
@@ -372,8 +387,8 @@ p {
 
 
 .text2 {
-    margin-top:30px;
-    font-size: 14px;
+    margin-top:50px;
+    font-size: 18px;
 }
 
 .topnav {
