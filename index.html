@@ -1,84 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZomiGames: Innovative Games for Mobile Enthusiasts</title>
-    <meta name="description" content="Explore innovative mobile games at ZomiGames. Dive into unique adventures and high-quality gameplay designed for every mobile enthusiast. Start playing now!">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <style>
-        body { font-family:  serif,sans-serif; line-height: 1.6; color: #333; padding: 20px; padding-top: 0px}
-        header { background: #333; color: #fff; padding:5px; text-align: center; }
-        #prolog{ background-image: url(BKFeatureImage.jpg); background-size: cover;justify-content: center; height: 300px; width: 100%}
-        #prolog h2{color:floralwhite;text-align: center; display: flex; flex-direction: column; justify-content: flex-end;height: 250px;}
-        h1 { margin: 0.2em}
-        nav { text-align: center; margin-top: 20px; }
-        nav a { margin: 0 10px; color: #555; text-decoration: none; }
-        footer { text-align: center; padding: 20px; margin-top: 20px; border-top: 1px solid #ccc; }
-        .content { max-width: 800px; margin: auto; }
-        .gallery {display: flex; flex-wrap: wrap;justify-content: space-around}
-        .gallery div {width: 300px; max-width: 500px; height: 300px; margin: 15px; background-size:cover; }
-        .ff {background-image:url(baby3.jpg)}
-        .sr {background-image: url(snake5.jpg)}
-        .bb {background-image: url(box4.jpg)}
-        article { margin-top: 20px; }
-        @media (max-width: 768px) {
-            .gallery img { width: 100%; }
-            body { padding: 50px; padding-top: 0px}
-            
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>ZomiGames</h1>
-        
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="content">
-        <div id="prolog">
-           
-            <h2>Play More, Carry Less</h2>
+
+<html land="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Zomigames</title>
+
+        <link rel="stylesheet" href="zomigames.css">
+        <div id="loading">
+            <div></div>
         </div>
-        <section id="about">
-            <h2>Welcome to ZomiGames!</h2>
-            <p>Hey there! We’re ZomiGames, a cozy corner in the vast world of mobile gaming, brought to life with a sprinkle of family magic—named after the founder’s two daughters. We love making fun, engaging games that you can dive into anytime, anywhere.
+    </head>
 
-Check out our lineup! Whether you're into action-packed adventures, brain-teasing puzzles, or something in between, we’ve got just the game to keep you entertained. Each game is a pocket-sized portal to a new adventure, made with a pinch of innovation and heaps of passion.
-
-Ready to dive deeper? Sign up for our newsletter and join our gaming family to discover new worlds right from your mobile! Fun times guaranteed.</p>
-        </section>
-        <section id="gallery">
-            <h2>Zomi's Game Showcase</h2>
-            <div class="gallery">
-                <div class="ff"></div>
+    <body>
+        <div class="menu-hidden">
+            
+            <div id="menu-list">
                 <div>
-                    <h2>Feathery Fury</h2>
-                    <p>Fun games for children are a must, which is why Feathery Fury was created. Tilt your device to guide the chicken mom, blending excitement with classic 2D platformer gameplay. Your mission: collect all the adorable baby chicks and lead them back to the safety of your nest.</p>
+                 <div id="logo">
+                    <img src="ZomiGamesLogoNoShadow.png" onload="ImageReady()">
+                 </div>
+                <div>
+                    <p>ZomiGames</p>
                 </div>
-                <div class="sr"></div>
-                 <div>
-                    <h2>Snakr</h2>
-                    <p>Introducing Classic Snake: the beloved retro game revamped with stunning visuals, captivating effects, yet retaining its iconic gameplay mechanics.</p>
                 </div>
-                <div class="bb"></div>
-                 <div>
-                    <h2>Box Blaster</h2>
-                    <p>Dive into Box Blasters!  Test your reflexes with endless tapping action. Collect coins, diamonds, and hearts while dodging bombs. Activate strategic power-ups for mega scores! Challenge yourself in this addictive tapping adventure!"</p>
+                <div id="download">
+                    <img src="DownloadIcon.png" onload="ImageReady()">
                 </div>
             </div>
-        </section>
-        <article id="contact">
-            <h2>Contact Us</h2>
-            <p>Questions or feedback? Connect with us at <a href="mailto:contact@brokenkingdom.com">contact@brokenkingdom.com</a> or follow us on social media for updates and more!</p>
-        </article>
-    </div>
-    <footer>
-        <p>© 2023 Broken Kingdom. All rights reserved.</p>
-    </footer>
-</body>
+
+        </div>
+
+        <div id="detail-panel">
+            <div id="close-detail">
+                <img src="X.png">
+            </div>
+            <ul class = "detail-list">
+                <p id = "title">Games</p>
+                <p id = "text">Here should be a description about the game and some screenshost with a video preview</p>
+                <p id = "privacy-link">PRIVACY POLICY</p>
+                <div id = "images">
+                    <figure>
+                        <img class = "img"  id = "img1" src="baby1.jpg">
+                        <img class = "img" src="baby2.jpg">
+                        <img class = "img" src="baby3.jpg">
+                        <img class = "img" src="baby4.jpg">
+                        <img class = "img" src="baby5.jpg">
+                    </figure>
+                </div>
+            </ul>
+
+
+        </div>
+
+        <div id="download-panel">
+            <div id="close-panel">
+                <img src="X.png">
+            </div>
+            <div id="baby-download" class="game-download">
+                <div class="download-list">
+                    <div id="download-icon" class = "anim">
+                        <img src="babyLogo.png">
+                    </div>
+                    <div class="download-ios anim" onclick="location.href='https://apps.apple.com/us/app/baby-chicks/id1388342452?ls=1';">
+                        <img src="download-apple.png">
+                    </div>
+                    <div class="download-ios anim" onclick="location.href='bbwgl/windex.html';">
+                        <img src="webgl.png">
+                    </div>
+                    <!--
+                    <div class="download-android anim">
+                        <img src="download_google.png">
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div id="snake-download" class="game-download">
+             <div class="download-list">
+                    <div id="download-icon" class = "anim">
+                        <img src="snakeLogo.png">
+                    </div>
+                    <div class="download-ios anim" onclick="location.href='https://apps.apple.com/us/app/classic-snake/id1266916950?ls=1';">
+                        <img src="download-apple.png">
+                    </div>
+                  <div class="download-ios anim" onclick="location.href='snakewgl/index.html';">
+                      <img src="webgl.png">
+                  </div>
+
+                  <!--
+                    <div class="download-android anim">
+                        <img src="download_google.png">
+                    </div>
+                    -->
+                  </div>
+                </div>
+
+            <div id="box-download" class="game-download">
+             <div class="download-list">
+                    <div id="download-icon" class = "anim">
+                        <img src="boxLogo.png">
+                    </div>
+
+                    <div class="download-ios anim"onclick="location.href='https://apps.apple.com/us/app/hit-the-box/id1209115164?ls=1';">
+                        <img src="download-apple.png">
+                    </div>
+                   
+                    <div class="download-android anim" onclick="location.href='https://play.google.com/store/apps/details?id=com.schvegler.hitthebox';">
+                        <img src="download_google.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+       
+            <div id="promo">
+                 <a href="https://brokenkingdomgame.com">
+                <div class="text-overlay">Broken Kingdom</div>
+                </a>
+            </div>
+           
+            <div id="baby" class="baby, games">
+                <p>Feathery Fury</p>
+            </div>
+            <div id="snake" class="snake, games">
+                <p>Snakr</p>
+            </div>
+            <div id="box" class="box, games">
+                <p>Box Blaster</p>
+            </div>
+
+        </div>
+
+    </body>
+
+<footer class="hidden">
+    <p class="text2">© 2023 Zomigames. All rights reserved. </p>
+    
+    <script src="script.js"></script>
+</footer>
+
 </html>
