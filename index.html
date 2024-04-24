@@ -2,6 +2,8 @@
 
 <html land="en">
     <head>
+    <script src=jquery.min.js></script>
+        
         <meta charset="utf-8">
 
         <title>ZomiGames: Your Portal to Mobile Gaming Adventures</title>
@@ -50,7 +52,7 @@
                     </figure>
                 </div>
                 <div >
-                    <video id = "video" preload="auto" autoplay loop muted="muted" volume ="0" controls>
+                    <video id = "video" preload="auto" autoplay loop webkit-playsinline playsinline muted="muted" volume ="0" controls>
                         <source src="/demo.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -68,7 +70,7 @@
                     <div id="download-icon" class = "anim">
                         <img src="babyLogo.png">
                     </div>
-                    <div class="download-ios anim" onclick="location.href='https://apps.apple.com/us/app/baby-chicks/id1388342452?ls=1';">
+                    <div class="download-ios anim"   onclick="location.href='https://apps.apple.com/us/app/baby-chicks/id1388342452?ls=1';">
                         <img src="download-apple.png">
                     </div>
                     <div class="download-ios anim" onclick="https://play.google.com/store/apps/details?id=com.Schvegler.BabyChicks&hl=EN;">
@@ -121,22 +123,43 @@
         <div class="main-container">
 
             <div id="promo">
-                <video autoplay muted loop poster="BKFeatureImage.jpg" id="background-video">
+                <video autoplay muted loop webkit-playsinline playsinline poster="BKFeatureImage.jpg" id="background-video">
                 <source src="demo.webm" type="video/webm" >
                 <source src="demo.mp4" type="video/mp4" >
                 <!-- Add more <source> tags for different video formats -->
                 Your browser does not support the video tag.
                 </video>
-                
-               <div id="welcomeImg">
+                <div id="welcomeImg">
                 </div>
             </div>
+            
+        <div id = "sub"> 
+            <h2 id= "thx"> Thank you for subscribing! We're excited to share our upcoming games and updates with you.</h2>
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScpuS4m1SkGceoUNO3bWBknjxsTH_0o-bRSEnRFGTG-00iGUg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+               <h1>Subscribe for Updates</h1>
+                Name:<br>
+              <input type="text" name="entry.2005620554" id="entry.2005620554"><br><br>
+              E-mail adress:<br>
+              <input type="text" name="entry.1045781291" id="entry.1045781291"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            
+        </div>
+
+            <div id="bk" class="bk">
+                <p>Broken Kingdom</p>
+                
+            </div>
+
             <div id="baby" class="baby">
                 <p>Feathery Fury</p>
             </div>
+            
             <div id="snake" class="snake">
                 <p>Snakr</p>
             </div>
+            
             <div id="box" class="box">
                 <p>Box Blaster</p>
             </div>
