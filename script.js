@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("snake").addEventListener("click", SnakeDetail);
     document.getElementById("box").addEventListener("click", BoxDetail);
     document.getElementById("bk").addEventListener('click', function() {
-        window.location.href = 'https:/brokenkingdomgame.com';
+        window.location.href = 'https://brokenkingdomgame.com';
     });
     zomiLogo = document.getElementById("logo");
     titleDetail = document.getElementById("title");

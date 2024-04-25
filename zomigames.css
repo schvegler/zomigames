@@ -55,7 +55,7 @@ body {
     position: relative;
     max-width:100%;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     margin-bottom: 20px;
     background-color: black;
 }
@@ -170,8 +170,7 @@ body {
 }
 
 #bk {
-    background-image: url('bk.jpg'); /* Your image path */
-    background-position: top; /* Keeps the image centered */
+    background-image: url('BKFeatureImage.jpg'); /* Your image path */
     margin: 50px;
     margin-top: 50px;
     border-radius: 30px;
