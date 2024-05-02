@@ -271,10 +271,8 @@ body {
     padding-top: 120px;
     padding-bottom: 150px;
     position: absolute;
-    position: fixed;
     background: rgba(0, 0, 0, 0.8);
     top:0;
-    //left:-100%;
     margin-left: -100%;
     transition: 0.5s;
 }
@@ -288,7 +286,6 @@ body {
     position: absolute;
     transition: 1s;
     overflow: hidden;
-    position: fixed;
 }
 
 #close-detail {
@@ -398,13 +395,9 @@ p {
 }
 
 footer p {
-    float: right;
-     display: inline-block;
+    display: inline-block;
 }
 
-.hidden {
-    
-}
 
 .text1 {
     
